@@ -1,16 +1,15 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
+@layer components {
+	.btn-background {
+		@apply flex items-center justify-center w-32 h-10 bg-white rounded-3xl font-overpass text-base font-extrabold leading-4 text-[#FF7A85] hover:border-[1px] hover:border-white hover:bg-transparent hover:text-white;
+	}
+	.btn-transperant {
+		@apply flex items-center justify-center w-32 h-10  rounded-3xl font-overpass text-base font-extrabold leading-4 text-white;
+	}
+	.btn-outlined {
+		@apply flex items-center justify-center w-32 h-10  rounded-3xl font-overpass text-base font-extrabold leading-4 text-white border-[1px] border-white hover:bg-white hover:text-[#FF7A85];
+	}
 }
