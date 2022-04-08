@@ -4,8 +4,8 @@ import Dropdown from '../Base/Dropdown';
 
 const Navbars = () => {
 	return (
-		<div className='flex-col w-screen h-[400px] lg:h-[600px] rounded-bl-[6rem] py-10 px-5 sm:py-10 sm:px-10 md:py-20 md:px-20 lg:px-44 bg-gradient-to-r from-[#FF8F70] to-[#FF3D54] '>
-			<nav class='flex lg:flex-row justify-between'>
+		<div className='flex flex-col  h-[400px] lg:h-[600px] rounded-bl-[6rem] py-10 px-5 sm:py-10 sm:px-10 md:py-20 md:px-20 lg:px-44 bg-gradient-to-r from-[#FF8F70] to-[#FF3D54] '>
+			<nav className='flex lg:flex-row justify-between'>
 				<div className='flex flex-row'>
 					<div className='w-[101] h-[40]'>
 						<Image src='/images/logo.svg' width={101} height={40} />
@@ -23,7 +23,7 @@ const Navbars = () => {
 				</div>
 			</nav>
 			<div className='flex justify-center pt-10 lg:pt-24'>
-				<h1 className='text-white font-overpass font-semibold text-3xl lg:text-4xl xl:text-6xl'>
+				<h1 className='text-white font-overpass font-semibold text-3xl lg:text-5xl xl:text-6xl'>
 					A modern publishing platform
 				</h1>
 			</div>
